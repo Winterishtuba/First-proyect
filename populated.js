@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const User = require('./models/user');
 
-const db = 'mongodb://localhost/hellodb';
+const db = 'mongodb+srv://hellodb:hallodatenbank@clusterlol.vetpo.mongodb.net/hellodb?retryWrites=true&w=majority';
 
 const users = [
   {
@@ -48,4 +48,4 @@ mongoose
       mongoose.connection.close();
     });
   })
-  .catch(err => console.error(`Connection error ${err}`));
+  .catch(err => console.error(`Connection error ${err}`));  
