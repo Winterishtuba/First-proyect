@@ -4,7 +4,7 @@ const express = require ('express');
 const mongoose = require ('mongoose');
 const router = require('./routes/api/user');
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 const db = process.env.DB || 'mongodb://localhost/hellodb';
 
 const app = express();
